@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="1.8.0_241" class="java.beans.XMLDecoder">
+ <object class="java.util.ArrayList">
+  <void method="add">
+   <object class="fr.harfeur.tp03.xml.ImageModèle" id="ImageModèle0">
+    <void class="fr.harfeur.tp03.xml.ImageModèle" method="getField">
+     <string>image</string>
+     <void method="set">
+      <object idref="ImageModèle0"/>
+      <string>bretagne.jpg</string>
+     </void>
+    </void>
+    <void class="fr.harfeur.tp03.xml.ImageModèle" method="getField">
+     <string>chemin</string>
+     <void method="set">
+      <object idref="ImageModèle0"/>
+      <string>assets\images\bretagne.jpg</string>
+     </void>
+    </void>
+    <void class="fr.harfeur.tp03.xml.ImageModèle" method="getField">
+     <string>note</string>
+     <void method="set">
+      <object idref="ImageModèle0"/>
+      <int>4</int>
+     </void>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="fr.harfeur.tp03.xml.ImageModèle" id="ImageModèle1">
+    <void class="fr.harfeur.tp03.xml.ImageModèle" method="getField">
+     <string>image</string>
+     <void method="set">
+      <object idref="ImageModèle1"/>
+      <string>cellules.jpg</string>
+     </void>
+    </void>
+    <void class="fr.harfeur.tp03.xml.ImageModèle" method="getField">
+     <string>chemin</string>
+     <void method="set">
+      <object idref="ImageModèle1"/>
+      <string>assets\images\cellules.jpg</string>
+     </void>
+    </void>
+    <void class="fr.harfeur.tp03.xml.ImageModèle" method="getField">
+     <string>note</string>
+     <void method="set">
+      <object idref="ImageModèle1"/>
+      <int>0</int>
+     </void>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="fr.harfeur.tp03.xml.ImageModèle" id="ImageModèle2">
+    <void class="fr.harfeur.tp03.xml.ImageModèle" method="getField">
+     <string>image</string>
+     <void method="set">
+      <object idref="ImageModèle2"/>
+      <string>espace.jpg</string>
+     </void>
+    </void>
+    <void class="fr.harfeur.tp03.xml.ImageModèle" method="getField">
+     <string>chemin</string>
+     <void method="set">
+      <object idref="ImageModèle2"/>
+      <string>assets\images\espace.jpg</string>
+     </void>
+    </void>
+    <void class="fr.harfeur.tp03.xml.ImageModèle" method="getField">
+     <string>note</string>
+     <void method="set">
+      <object idref="ImageModèle2"/>
+      <int>0</int>
+     </void>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="fr.harfeur.tp03.xml.ImageModèle" id="ImageModèle3">
+    <void class="fr.harfeur.tp03.xml.ImageModèle" method="getField">
+     <string>image</string>
+     <void method="set">
+      <object idref="ImageModèle3"/>
+      <string>gaudi.jpg</string>
+     </void>
+    </void>
+    <void class="fr.harfeur.tp03.xml.ImageModèle" method="getField">
+     <string>chemin</string>
+     <void method="set">
+      <object idref="ImageModèle3"/>
+      <string>assets\images\gaudi.jpg</string>
+     </void>
+    </void>
+    <void class="fr.harfeur.tp03.xml.ImageModèle" method="getField">
+     <string>note</string>
+     <void method="set">
+      <object idref="ImageModèle3"/>
+      <int>0</int>
+     </void>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="fr.harfeur.tp03.xml.ImageModèle" id="ImageModèle4">
+    <void class="fr.harfeur.tp03.xml.ImageModèle" method="getField">
+     <string>image</string>
+     <void method="set">
+      <object idref="ImageModèle4"/>
+      <string>lucane.jpg</string>
+     </void>
+    </void>
+    <void class="fr.harfeur.tp03.xml.ImageModèle" method="getField">
+     <string>chemin</string>
+     <void method="set">
+      <object idref="ImageModèle4"/>
+      <string>assets\images\lucane.jpg</string>
+     </void>
+    </void>
+    <void class="fr.harfeur.tp03.xml.ImageModèle" method="getField">
+     <string>note</string>
+     <void method="set">
+      <object idref="ImageModèle4"/>
+      <int>0</int>
+     </void>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="fr.harfeur.tp03.xml.ImageModèle" id="ImageModèle5">
+    <void class="fr.harfeur.tp03.xml.ImageModèle" method="getField">
+     <string>image</string>
+     <void method="set">
+      <object idref="ImageModèle5"/>
+      <string>paris.jpg</string>
+     </void>
+    </void>
+    <void class="fr.harfeur.tp03.xml.ImageModèle" method="getField">
+     <string>chemin</string>
+     <void method="set">
+      <object idref="ImageModèle5"/>
+      <string>assets\images\paris.jpg</string>
+     </void>
+    </void>
+    <void class="fr.harfeur.tp03.xml.ImageModèle" method="getField">
+     <string>note</string>
+     <void method="set">
+      <object idref="ImageModèle5"/>
+      <int>0</int>
+     </void>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="fr.harfeur.tp03.xml.ImageModèle" id="ImageModèle6">
+    <void class="fr.harfeur.tp03.xml.ImageModèle" method="getField">
+     <string>image</string>
+     <void method="set">
+      <object idref="ImageModèle6"/>
+      <string>personnes.jpg</string>
+     </void>
+    </void>
+    <void class="fr.harfeur.tp03.xml.ImageModèle" method="getField">
+     <string>chemin</string>
+     <void method="set">
+      <object idref="ImageModèle6"/>
+      <string>assets\images\personnes.jpg</string>
+     </void>
+    </void>
+    <void class="fr.harfeur.tp03.xml.ImageModèle" method="getField">
+     <string>note</string>
+     <void method="set">
+      <object idref="ImageModèle6"/>
+      <int>0</int>
+     </void>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="fr.harfeur.tp03.xml.ImageModèle" id="ImageModèle7">
+    <void class="fr.harfeur.tp03.xml.ImageModèle" method="getField">
+     <string>image</string>
+     <void method="set">
+      <object idref="ImageModèle7"/>
+      <string>sport.jpg</string>
+     </void>
+    </void>
+    <void class="fr.harfeur.tp03.xml.ImageModèle" method="getField">
+     <string>chemin</string>
+     <void method="set">
+      <object idref="ImageModèle7"/>
+      <string>assets\images\sport.jpg</string>
+     </void>
+    </void>
+    <void class="fr.harfeur.tp03.xml.ImageModèle" method="getField">
+     <string>note</string>
+     <void method="set">
+      <object idref="ImageModèle7"/>
+      <int>0</int>
+     </void>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="fr.harfeur.tp03.xml.ImageModèle" id="ImageModèle8">
+    <void class="fr.harfeur.tp03.xml.ImageModèle" method="getField">
+     <string>image</string>
+     <void method="set">
+      <object idref="ImageModèle8"/>
+      <string>tigre.jpg</string>
+     </void>
+    </void>
+    <void class="fr.harfeur.tp03.xml.ImageModèle" method="getField">
+     <string>chemin</string>
+     <void method="set">
+      <object idref="ImageModèle8"/>
+      <string>assets\images\tigre.jpg</string>
+     </void>
+    </void>
+    <void class="fr.harfeur.tp03.xml.ImageModèle" method="getField">
+     <string>note</string>
+     <void method="set">
+      <object idref="ImageModèle8"/>
+      <int>0</int>
+     </void>
+    </void>
+   </object>
+  </void>
+ </object>
+</java>
