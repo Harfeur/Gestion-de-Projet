@@ -10,7 +10,7 @@ public class AWT_ListeImages extends Panel implements Observer {
 	
 	List liste;
 	
-	public AWT_ListeImages(Contrôleur cListe) {
+	public AWT_ListeImages(ContrÃ´leur cListe) {
 		super();
 		this.liste = new List(20, false);
 		

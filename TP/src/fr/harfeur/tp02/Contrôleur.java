@@ -5,13 +5,13 @@ import java.awt.List;
 import java.awt.event.ItemEvent;
 import java.awt.event.ItemListener;
 
-public class Contrôleur implements ItemListener {
+public class ContrÃ´leur implements ItemListener {
 
-	Modèle modèle;
+	ModÃ¨le modÃ¨le;
 
-	public Contrôleur(Modèle modèle) {
+	public ContrÃ´leur(ModÃ¨le modÃ¨le) {
 		super();
-		this.modèle = modèle;
+		this.modÃ¨le = modÃ¨le;
 	}
 
 	@Override
@@ -19,10 +19,10 @@ public class Contrôleur implements ItemListener {
 		if (e.getStateChange() == ItemEvent.SELECTED) {
 			if (e.getSource().getClass() == List.class) {
 				List l = (List) e.getSource();
-				this.modèle.changerImage(l.getSelectedItem());
+				this.modÃ¨le.changerImage(l.getSelectedItem());
 			} else if (e.getSource().getClass() == Checkbox.class) {
 				Checkbox c = (Checkbox) e.getSource();
-				this.modèle.changerNote(Character.getNumericValue(c.getLabel().charAt(0)));
+				this.modÃ¨le.changerNote(Character.getNumericValue(c.getLabel().charAt(0)));
 			}
 		}
 	}

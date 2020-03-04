@@ -11,7 +11,7 @@ public class AWT_ListeImages extends Panel implements Observer {
 
 	List liste;
 
-	public AWT_ListeImages(Contrôleur cListe) {
+	public AWT_ListeImages(ContrÃ´leur cListe) {
 		super();
 		this.liste = new List(20, false);
 
@@ -36,13 +36,13 @@ public class AWT_ListeImages extends Panel implements Observer {
 			this.liste.select(index);
 		} else if (arg.getClass() == ArrayList.class) {
 			@SuppressWarnings("unchecked")
-			ArrayList<ImageModèle> l = (ArrayList<ImageModèle>) arg;
-			for (ImageModèle imageModèle : l) {
-				System.out.println(imageModèle.image);
-				String img = imageModèle.image.split("\\.")[0];
+			ArrayList<ImageModÃ¨le> l = (ArrayList<ImageModÃ¨le>) arg;
+			for (ImageModÃ¨le imageModÃ¨le : l) {
+				System.out.println(imageModÃ¨le.image);
+				String img = imageModÃ¨le.image.split("\\.")[0];
 				img += " ";
 				
-				for (int i = 0; i < imageModèle.note; i++) {
+				for (int i = 0; i < imageModÃ¨le.note; i++) {
 					img += "*";
 				}
 				

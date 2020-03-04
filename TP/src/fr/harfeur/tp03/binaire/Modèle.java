@@ -9,14 +9,14 @@ import java.io.ObjectOutputStream;
 import java.util.ArrayList;
 import java.util.Observable;
 
-public class Modèle extends Observable {
+public class ModÃ¨le extends Observable {
 	
-	protected ArrayList<ImageModèle> listeImages;
-	protected Integer imageSélectionnée;
+	protected ArrayList<ImageModÃ¨le> listeImages;
+	protected Integer imageSÃ©lectionnÃ©e;
 	protected File fichier;
 	
 	@SuppressWarnings("unchecked")
-	public Modèle() {
+	public ModÃ¨le() {
 		super();
 		this.fichier = new File("assets/images.dat");
 		
@@ -24,7 +24,7 @@ public class Modèle extends Observable {
 			FileInputStream fis = new FileInputStream(fichier);
 			ObjectInputStream ois = new ObjectInputStream(fis);
 			
-			this.listeImages = (ArrayList<ImageModèle>) ois.readObject();
+			this.listeImages = (ArrayList<ImageModÃ¨le>) ois.readObject();
 			
 			ois.close();
 			fis.close();
@@ -32,14 +32,14 @@ public class Modèle extends Observable {
 			File dossier = new File("assets/images");
 			File[] images = dossier.listFiles();
 			
-			this.listeImages = new ArrayList<ImageModèle>(images.length);
+			this.listeImages = new ArrayList<ImageModÃ¨le>(images.length);
 			
 			for (File file : images) {
-				this.listeImages.add(new ImageModèle(file.getName(), file.getPath()));
+				this.listeImages.add(new ImageModÃ¨le(file.getName(), file.getPath()));
 			}
 		}
 		
-		this.imageSélectionnée = 0;
+		this.imageSÃ©lectionnÃ©e = 0;
 	}
 	
 	public void envoyerListe() {
@@ -52,15 +52,15 @@ public class Modèle extends Observable {
 		while (i < this.listeImages.size() && !this.listeImages.get(i).image.equals(img.split(" ")[0] + ".jpg")) {
 			++i;
 		}
-		this.imageSélectionnée = i;
+		this.imageSÃ©lectionnÃ©e = i;
 		this.setChanged();
-		this.notifyObservers(this.listeImages.get(this.imageSélectionnée));
+		this.notifyObservers(this.listeImages.get(this.imageSÃ©lectionnÃ©e));
 	}
 
 	public void changerNote(Integer note) {
-		this.listeImages.get(this.imageSélectionnée).note = note;
+		this.listeImages.get(this.imageSÃ©lectionnÃ©e).note = note;
 		this.setChanged();
-		this.notifyObservers(this.listeImages.get(this.imageSélectionnée).note);
+		this.notifyObservers(this.listeImages.get(this.imageSÃ©lectionnÃ©e).note);
 	}
 	
 	public void enregistrer() {
@@ -73,7 +73,7 @@ public class Modèle extends Observable {
 			oos.close();
 			fos.close();
 		} catch (IOException e) {
-			throw new RuntimeException("Impossible d'écrire les données");
+			throw new RuntimeException("Impossible d'ï¿½crire les donnï¿½es");
 		}
 	}
 	

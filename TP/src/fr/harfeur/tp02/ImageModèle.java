@@ -1,11 +1,11 @@
 package fr.harfeur.tp02;
 
-public class ImageModèle {
+public class ImageModÃ¨le {
 	
 	protected String image, chemin;
 	protected Integer note;
 	
-	public ImageModèle(String image, String chemin) {
+	public ImageModÃ¨le(String image, String chemin) {
 		super();
 		this.image = image;
 		this.chemin = chemin;

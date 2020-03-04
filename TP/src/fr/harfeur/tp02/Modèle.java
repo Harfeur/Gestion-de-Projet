@@ -4,22 +4,22 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.Observable;
 
-public class Modèle extends Observable {
+public class ModÃ¨le extends Observable {
 	
-	protected ArrayList<ImageModèle> listeImages;
-	protected Integer imageSélectionnée;
+	protected ArrayList<ImageModÃ¨le> listeImages;
+	protected Integer imageSÃ©lectionnÃ©e;
 	
-	public Modèle() {
+	public ModÃ¨le() {
 		super();
 		File dossier = new File("assets/images");
 		File[] images = dossier.listFiles();
 		
-		this.listeImages = new ArrayList<ImageModèle>(images.length);
+		this.listeImages = new ArrayList<ImageModÃ¨le>(images.length);
 		
 		for (File file : images) {
-			this.listeImages.add(new ImageModèle(file.getName(), file.getAbsolutePath()));
+			this.listeImages.add(new ImageModÃ¨le(file.getName(), file.getAbsolutePath()));
 		}
-		this.imageSélectionnée = 0;
+		this.imageSÃ©lectionnÃ©e = 0;
 	}
 	
 	public void changerImage(String img) {
@@ -27,15 +27,15 @@ public class Modèle extends Observable {
 		while (i < this.listeImages.size() && !this.listeImages.get(i).image.equals(img.split(" ")[0] + ".jpg")) {
 			++i;
 		}
-		this.imageSélectionnée = i;
+		this.imageSÃ©lectionnÃ©e = i;
 		this.setChanged();
-		this.notifyObservers(this.listeImages.get(this.imageSélectionnée));
+		this.notifyObservers(this.listeImages.get(this.imageSÃ©lectionnÃ©e));
 	}
 
 	public void changerNote(Integer note) {
-		this.listeImages.get(this.imageSélectionnée).note = note;
+		this.listeImages.get(this.imageSÃ©lectionnÃ©e).note = note;
 		this.setChanged();
-		this.notifyObservers(this.listeImages.get(this.imageSélectionnée).note);
+		this.notifyObservers(this.listeImages.get(this.imageSÃ©lectionnÃ©e).note);
 	}
 	
 }

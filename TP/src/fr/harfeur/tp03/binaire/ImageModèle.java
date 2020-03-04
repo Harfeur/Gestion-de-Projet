@@ -2,14 +2,14 @@ package fr.harfeur.tp03.binaire;
 
 import java.io.Serializable;
 
-public class ImageModèle implements Serializable {
+public class ImageModÃ¨le implements Serializable {
 	
 	private static final long serialVersionUID = 1L;
 	
 	protected String image, chemin;
 	protected Integer note;
 	
-	public ImageModèle(String image, String chemin) {
+	public ImageModÃ¨le(String image, String chemin) {
 		super();
 		this.image = image;
 		this.chemin = chemin;
