@@ -5,23 +5,24 @@ import java.util.ArrayList;
 import java.util.Observable;
 
 public class Modèle extends Observable {
-	
+
 	protected ArrayList<ImageModèle> listeImages;
 	protected Integer imageSélectionnée;
-	
+
 	public Modèle() {
 		super();
 		File dossier = new File("assets/images");
 		File[] images = dossier.listFiles();
-		
-		this.listeImages = new ArrayList<ImageModèle>(images.length);
-		
-		for (File file : images) {
-			this.listeImages.add(new ImageModèle(file.getName(), file.getAbsolutePath()));
-		}
+
+		this.listeImages = new ArrayList<ImageModèle>();
+
+		if (images != null)
+			for (File file : images) {
+				this.listeImages.add(new ImageModèle(file.getName(), file.getAbsolutePath()));
+			}
 		this.imageSélectionnée = 0;
 	}
-	
+
 	public void changerImage(String img) {
 		int i = 0;
 		while (i < this.listeImages.size() && !this.listeImages.get(i).image.equals(img.split(" ")[0] + ".jpg")) {
@@ -37,5 +38,5 @@ public class Modèle extends Observable {
 		this.setChanged();
 		this.notifyObservers(this.listeImages.get(this.imageSélectionnée).note);
 	}
-	
+
 }

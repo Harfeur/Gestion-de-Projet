@@ -32,11 +32,12 @@ public class Modèle extends Observable {
 			File dossier = new File("assets/images");
 			File[] images = dossier.listFiles();
 			
-			this.listeImages = new ArrayList<ImageModèle>(images.length);
+			this.listeImages = new ArrayList<ImageModèle>();
 			
-			for (File file : images) {
-				this.listeImages.add(new ImageModèle(file.getName(), file.getPath()));
-			}
+			if (images != null)
+				for (File file : images) {
+					this.listeImages.add(new ImageModèle(file.getName(), file.getPath()));
+				}
 		}
 		
 		this.imageSélectionnée = 0;
