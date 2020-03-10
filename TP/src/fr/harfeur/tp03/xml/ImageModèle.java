@@ -2,22 +2,22 @@ package fr.harfeur.tp03.xml;
 
 import java.io.Serializable;
 
-public class ImageModèle implements Serializable {
+public class ImageModÃ¨le implements Serializable {
 	
 	private static final long serialVersionUID = 1L;
 	
 	public String image, chemin;
 	public Integer note;
 	
-	public ImageModèle() {
+	public ImageModÃ¨le() {
 		super();
 	}
 	
-	public ImageModèle(String image, String chemin) {
+	public ImageModÃ¨le(String image, String chemin) {
 		super();
 		this.image = image;
 		this.chemin = chemin;
-		this.note = new Integer(0);
+		this.note = 0;
 	}
 	@Override
 	public String toString() {

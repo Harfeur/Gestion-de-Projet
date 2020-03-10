@@ -31,8 +31,8 @@ public class AWT_AfficheurImage extends Canvas implements Observer {
 
 	@Override
 	public void update(Observable o, Object arg) {
-		if (arg.getClass() != ImageModèle.class) return;
-		ImageModèle img = (ImageModèle) arg;
+		if (arg.getClass() != ImageModÃ¨le.class) return;
+		ImageModÃ¨le img = (ImageModÃ¨le) arg;
 		this.image = img.chemin;
 		this.repaint();
 	}

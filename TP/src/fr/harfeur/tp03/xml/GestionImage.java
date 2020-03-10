@@ -11,17 +11,17 @@ public class GestionImage extends Frame {
 	
 	public GestionImage() {
 		
-		Modèle modèle = new Modèle();
+		ModÃ¨le modÃ¨le = new ModÃ¨le();
 		
-		Contrôleur controleur = new Contrôleur(modèle);
+		ContrÃ´leur controleur = new ContrÃ´leur(modÃ¨le);
 		
 		AWT_ListeImages vueListe = new AWT_ListeImages(controleur);
 		AWT_AfficheurImage vueImage = new AWT_AfficheurImage();
 		AWT_NoteImage vueNote = new AWT_NoteImage(controleur);
 		
-		modèle.addObserver(vueImage);
-		modèle.addObserver(vueNote);
-		modèle.addObserver(vueListe);
+		modÃ¨le.addObserver(vueImage);
+		modÃ¨le.addObserver(vueNote);
+		modÃ¨le.addObserver(vueListe);
 		
 		LayoutManager layout = new BorderLayout();
 		this.setLayout(layout);
@@ -29,12 +29,12 @@ public class GestionImage extends Frame {
 		this.add(vueNote, BorderLayout.SOUTH);
 		this.add(vueListe, BorderLayout.WEST);
 		
-		modèle.initialisation();
+		modÃ¨le.initialisation();
 		
 		this.addWindowListener(new WindowAdapter() {
 			public void windowClosing(WindowEvent e) {
-				System.out.println(modèle);
-				modèle.enregistrer();
+				System.out.println(modÃ¨le);
+				modÃ¨le.enregistrer();
 				System.exit(0);
 			}
 		});
