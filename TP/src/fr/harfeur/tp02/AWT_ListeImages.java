@@ -34,15 +34,15 @@ public class AWT_ListeImages extends Panel implements Observer {
 	public void update(Observable o, Object arg) {
 		if (arg.getClass() != Integer.class) return;
 		int index = this.liste.getSelectedIndex();
-		String img = this.liste.getItem(index).split(" ")[0];
+		StringBuilder img = new StringBuilder(this.liste.getItem(index).split(" ")[0]);
 		
-		img += " ";
+		img.append(' ');
 		for (int i = 0; i < (int) arg; i++) {
-			img += "*";
+			img.append('*');
 		}
 		
 		this.liste.remove(index);
-		this.liste.add(img, index);
+		this.liste.add(img.toString(), index);
 		this.liste.select(index);
 	}
 	
