@@ -13,7 +13,7 @@ public class ImageModèle implements Serializable {
 		super();
 		this.image = image;
 		this.chemin = chemin;
-		this.note = new Integer(0);
+		this.note = 0;
 	}
 	@Override
 	public String toString() {

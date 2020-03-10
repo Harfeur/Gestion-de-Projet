@@ -9,7 +9,7 @@ public class ImageModèle {
 		super();
 		this.image = image;
 		this.chemin = chemin;
-		this.note = new Integer(0);
+		this.note = 0;
 	}
 	
 }
